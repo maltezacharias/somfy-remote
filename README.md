@@ -1,7 +1,7 @@
 # somfy-remote
 ESP32 (NODEMCU32-S + Ebyte CC1101 Dev. Board) Somfy Remote PCB and Code
 
-!(pcb layout)[https://github.com/maltezacharias/somfy-remote/blob/main/pcb.png]
+![pcb layout](https://github.com/maltezacharias/somfy-remote/blob/main/pcb.png)
 
 
     kicad/ - hardware
