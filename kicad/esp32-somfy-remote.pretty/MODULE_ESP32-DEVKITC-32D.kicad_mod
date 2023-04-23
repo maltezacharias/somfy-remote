@@ -1,0 +1,108 @@
+(footprint "MODULE_ESP32-DEVKITC-32D" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 6442CDCC)
+  (attr through_hole)
+  (fp_text reference "U**" (at -11.684 -26.162) (layer "F.SilkS")
+    (effects (font (size 1.000386 1.000386) (thickness 0.15)))
+    (tstamp 0707b02d-6b5e-4dfc-8035-99b9a3419623)
+  )
+  (fp_text value "MODULE_ESP32-DEVKITC-32D" (at 0 28.294535) (layer "F.Fab")
+    (effects (font (size 1.001047 1.001047) (thickness 0.15)))
+    (tstamp 758bc5f8-b5fa-453f-afb0-04e2f2604fbf)
+  )
+  (fp_line (start -12.9 -23.25) (end -11.9 -24.25) (layer "F.SilkS") (width 0.12) (tstamp 4274d71e-59e4-4ca6-beb2-7e5b26912e6d))
+  (fp_rect (start -12.9 -24.25) (end 12.9 24.25) (layer "F.SilkS") (width 0.12) (fill none) (tstamp 838a9c8c-cd69-4042-bc50-7fca23c47b63))
+  (fp_rect (start -13.4 -24.75) (end 13.4 24.75) (layer "F.CrtYd") (width 0.12) (fill none) (tstamp b0ef57fc-8927-4748-8fd0-2804bbf8349b))
+  (pad "J21" thru_hole rect (at -11.43 -22.86) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 6f06c790-fcdd-4443-87df-9d743f11a0df))
+  (pad "J22" thru_hole circle (at -11.43 -20.32) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp ffc19258-91f8-452e-9047-d2cb5eee09f3))
+  (pad "J23" thru_hole circle (at -11.43 -17.78) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 881fa05e-a7e7-47dd-a413-f0e797e36a53))
+  (pad "J24" thru_hole circle (at -11.43 -15.24) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 717f0bde-78e4-4076-be30-d37d6bb21336))
+  (pad "J25" thru_hole circle (at -11.43 -12.7) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp b5588a2d-f65b-442e-989c-34562e8a97c4))
+  (pad "J26" thru_hole circle (at -11.43 -10.16) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 5119b18e-8167-4d11-aad4-2205bb5bbff1))
+  (pad "J27" thru_hole circle (at -11.43 -7.62) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 500d26c8-8506-4ce1-9a17-97bb6f5cb922))
+  (pad "J28" thru_hole circle (at -11.43 -5.08) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 4cbeb058-45d7-4a70-a62d-2726cc7061f8))
+  (pad "J29" thru_hole circle (at -11.43 -2.54) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 7471a4e0-f7a2-44e8-ac59-45846f8b1b0b))
+  (pad "J31" thru_hole circle (at 11.43 -22.86) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 19c1db7e-1652-4397-8ae1-7e8f013dc628))
+  (pad "J32" thru_hole circle (at 11.43 -20.32) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp aa3c1b9d-4597-43b2-b47a-fc44da6264cc))
+  (pad "J33" thru_hole circle (at 11.43 -17.78) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 5ad36fcb-6fdb-4cdb-a1e8-3a01fe48fcd0))
+  (pad "J34" thru_hole circle (at 11.43 -15.24) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 2884c1c2-1e8d-48d0-8f51-4909914d07fa))
+  (pad "J35" thru_hole circle (at 11.43 -12.7) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 2805e4ba-c6ce-4178-b2da-5b1b535a7d30))
+  (pad "J36" thru_hole circle (at 11.43 -10.16) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 9bc0a3e4-aefd-4a41-b994-3f857ec142a3))
+  (pad "J37" thru_hole circle (at 11.43 -7.62) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 8a24411b-aee2-4dd4-bfab-bbc6321e1664))
+  (pad "J38" thru_hole circle (at 11.43 -5.08) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp bd27d88e-fe7a-4afb-8802-a4529fc2d5d2))
+  (pad "J39" thru_hole circle (at 11.43 -2.54) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 8d79dbb2-7aec-4841-98b7-30e4fad86897))
+  (pad "J210" thru_hole circle (at -11.43 0) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp fcb8c0ff-a1bc-4bd1-873d-47c6574a25e6))
+  (pad "J211" thru_hole circle (at -11.43 2.54) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 74e4e2e4-81bf-4a37-aa1b-3b78bb582b3c))
+  (pad "J212" thru_hole circle (at -11.43 5.08) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 9c7e5491-70bd-4da9-be96-3b24ea0dc971))
+  (pad "J213" thru_hole circle (at -11.43 7.62) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 3986de36-afdc-472e-b238-167d9cd75e6b))
+  (pad "J214" thru_hole circle (at -11.43 10.16) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp bd629981-d98d-4335-9e69-fee6a1606564))
+  (pad "J215" thru_hole circle (at -11.43 12.7) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp b4f4f0f5-8c28-4a1d-a75c-8b29ace649bd))
+  (pad "J216" thru_hole circle (at -11.43 15.24) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp c276aefd-cb2e-465a-b96e-c0619cb2d584))
+  (pad "J217" thru_hole circle (at -11.43 17.78) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp a90512d0-64da-4768-991b-48d088a5683e))
+  (pad "J218" thru_hole circle (at -11.43 20.32) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 505b3b7b-bbcc-4f1a-a6d9-dec9920e46ec))
+  (pad "J219" thru_hole circle (at -11.43 22.86) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp b561c4fb-bcd1-4c70-858e-b455ddeb6f82))
+  (pad "J310" thru_hole circle (at 11.43 0) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 09cf8f59-611f-4a8e-ba44-c3c8ab2027fe))
+  (pad "J311" thru_hole circle (at 11.43 2.54) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp ea2043cb-7295-4a68-866d-aebd875ad4fc))
+  (pad "J312" thru_hole circle (at 11.43 5.08) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 87cb5764-07ee-4290-b82b-9e0007ceb01d))
+  (pad "J313" thru_hole circle (at 11.43 7.62) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp b7d0ac27-6b2d-4157-9d45-53dbf8e70932))
+  (pad "J314" thru_hole circle (at 11.43 10.16) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 6351acf9-2281-4468-a17b-9897925ee5f5))
+  (pad "J315" thru_hole circle (at 11.43 12.7) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 248cfa48-0fc0-486a-a5fc-005a835a679e))
+  (pad "J316" thru_hole circle (at 11.43 15.24) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp ba8a8720-bf29-464c-b3b1-d7b49dec2339))
+  (pad "J317" thru_hole circle (at 11.43 17.78) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp a25eb727-fac2-4273-b4e2-882522a7c742))
+  (pad "J318" thru_hole circle (at 11.43 20.32) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp 88ebcf2c-19b0-4d5e-807b-a517586d6b04))
+  (pad "J319" thru_hole circle (at 11.43 22.86) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask) (tstamp e7339f59-b303-4c89-b5e1-8c6fd4f729be))
+  (group "" (id 0256f97b-53d4-4f31-8062-6bc90b354277)
+    (members
+      1f740cb1-002f-4f1c-8417-fd206e2421a0
+      838a9c8c-cd69-4042-bc50-7fca23c47b63
+      b0ef57fc-8927-4748-8fd0-2804bbf8349b
+    )
+  )
+  (group "" (id 1f740cb1-002f-4f1c-8417-fd206e2421a0)
+    (members
+      09cf8f59-611f-4a8e-ba44-c3c8ab2027fe
+      19c1db7e-1652-4397-8ae1-7e8f013dc628
+      248cfa48-0fc0-486a-a5fc-005a835a679e
+      2805e4ba-c6ce-4178-b2da-5b1b535a7d30
+      2884c1c2-1e8d-48d0-8f51-4909914d07fa
+      3986de36-afdc-472e-b238-167d9cd75e6b
+      4cbeb058-45d7-4a70-a62d-2726cc7061f8
+      500d26c8-8506-4ce1-9a17-97bb6f5cb922
+      505b3b7b-bbcc-4f1a-a6d9-dec9920e46ec
+      5119b18e-8167-4d11-aad4-2205bb5bbff1
+      5ad36fcb-6fdb-4cdb-a1e8-3a01fe48fcd0
+      6351acf9-2281-4468-a17b-9897925ee5f5
+      6f06c790-fcdd-4443-87df-9d743f11a0df
+      717f0bde-78e4-4076-be30-d37d6bb21336
+      7471a4e0-f7a2-44e8-ac59-45846f8b1b0b
+      74e4e2e4-81bf-4a37-aa1b-3b78bb582b3c
+      87cb5764-07ee-4290-b82b-9e0007ceb01d
+      881fa05e-a7e7-47dd-a413-f0e797e36a53
+      88ebcf2c-19b0-4d5e-807b-a517586d6b04
+      8a24411b-aee2-4dd4-bfab-bbc6321e1664
+      8d79dbb2-7aec-4841-98b7-30e4fad86897
+      9bc0a3e4-aefd-4a41-b994-3f857ec142a3
+      9c7e5491-70bd-4da9-be96-3b24ea0dc971
+      a25eb727-fac2-4273-b4e2-882522a7c742
+      a90512d0-64da-4768-991b-48d088a5683e
+      aa3c1b9d-4597-43b2-b47a-fc44da6264cc
+      b4f4f0f5-8c28-4a1d-a75c-8b29ace649bd
+      b5588a2d-f65b-442e-989c-34562e8a97c4
+      b561c4fb-bcd1-4c70-858e-b455ddeb6f82
+      b7d0ac27-6b2d-4157-9d45-53dbf8e70932
+      ba8a8720-bf29-464c-b3b1-d7b49dec2339
+      bd27d88e-fe7a-4afb-8802-a4529fc2d5d2
+      bd629981-d98d-4335-9e69-fee6a1606564
+      c276aefd-cb2e-465a-b96e-c0619cb2d584
+      e7339f59-b303-4c89-b5e1-8c6fd4f729be
+      ea2043cb-7295-4a68-866d-aebd875ad4fc
+      fcb8c0ff-a1bc-4bd1-873d-47c6574a25e6
+      ffc19258-91f8-452e-9047-d2cb5eee09f3
+    )
+  )
+  (model "${KIPRJMOD}/3dmodels/ESP32-DEVKITC-32D--3DModel-STEP-56544.STEP"
+    (offset (xyz 0 -3 3.5))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
+)
