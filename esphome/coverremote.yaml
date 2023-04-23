@@ -1,0 +1,110 @@
+esphome:
+  name: coverremote
+  friendly_name: covers
+  libraries:
+    - EEPROM
+    - SPI
+    - SmartRC-CC1101-Driver-Lib@2.5.6
+    - Somfy_Remote_Lib@0.4.1
+  includes: 
+    - somfy_secrets.h
+    - somfy_cover.h
+
+esp32:
+  board: nodemcu-32s
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: !secret api_key
+
+ota:
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+cover:
+  - platform: custom
+    # define here the intialisation of remote instances,
+    # add one cover per virtual remote that you want to create and control
+    # for every remote define one secret in somfy_secrets.h
+    # (this is the code used to identify remotes)
+    # The parameters for add_cover are (name, key, remote_id)
+    # name and key must not be longer than 15 chars on esp32
+    # see ESP 32 manual
+    # 
+    # the lambda function returns a list of remotes, the covers: block
+    # then assigns an id to each of them in order that they were created.
+    # (see ESPHome https://esphome.io/components/cover/custom.html)
+    lambda: |-
+      auto somfy_remote = new SomfyESPRemote();
+      somfy_remote->add_cover("somfy", "bedroom", SOMFY_REMOTE_BEDROOM);
+      somfy_remote->add_cover("somfy", "livingroom1", SOMFY_REMOTE_LIVINGROOM_1);
+      somfy_remote->add_cover("somfy", "livingroom2", SOMFY_REMOTE_LIVINGROOM_2);
+      somfy_remote->add_cover("somfy", "livingroom3", SOMFY_REMOTE_LIVINGROOM_3);
+      App.register_component(somfy_remote);
+      return somfy_remote->covers;
+    covers:
+      - id: simu_cover_bedroom
+        name: cover_bedroom
+      - id: simu_cover_livingroom_1
+        name: cover_livingroom_1
+      - id: simu_cover_livingroom_2
+        name: cover_livingroom_2
+      - id: simu_cover_livingroom_3
+        name: cover_livingroom_3
+
+# The cover API only exposes open, close and stop/my commands. The program button needs
+# to be exposed separately.
+
+button:
+  - platform: template
+    name: "prog_bedroom_remote"     
+    on_press: 
+      then:
+        - lambda: |-
+            ((SomfyESPCover*)id(simu_cover_bedroom))->program();
+  - platform: template
+    name: "prog_livingroom_remote1"
+    on_press: 
+      then:
+        - lambda: |-
+            ((SomfyESPCover*)id(simu_cover_livingroom_1))->program();
+  - platform: template
+    name: "prog_livingroom_remote2"
+    on_press: 
+      then:
+        - lambda: |-
+            ((SomfyESPCover*)id(simu_cover_livingroom_2))->program();
+  - platform: template
+    name: "prog_livingroom_remote3"
+    on_press: 
+      then:
+        - lambda: |-
+            ((SomfyESPCover*)id(simu_cover_livingroom_3))->program();
+
+
+# PIN Connections
+# CC1101--->ESP32
+# ODD
+# 1 GND		  GND	
+# 3 GD0		  GPIO2
+# 5 SCK		  GPIO18
+# 7 MISO	  GPIO19
+#
+# EVEN
+# 2 VCC		  3V3
+# 4 CSN		  GPIO5
+# 6 MOSI	  GPIO23
+# 8 GDO2	  GPIO4
+#
+# Separated into ODD/EVEN because of the  numbering on the board:
+# (top view)
+#  2 4 6 8 
+#  1 3 5 7
