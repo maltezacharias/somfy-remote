@@ -24,3 +24,6 @@ https://pushstack.wordpress.com/somfy-rts-protocol/
 
 Library to drive the CC1101 from ESP32 (includes connection diagrams)
 https://github.com/LSatan/SmartRC-CC1101-Driver-Lib
+
+
+testing 123
